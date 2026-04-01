@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Melting Moments Restaurant</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #fefefe;
+    color: #333;
+  }
+  header {
+    background-color: #a34226;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+  }
+  nav {
+    background-color: #70371f;
+    text-align: center;
+    padding: 8px 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  nav a:hover {
+    color: #f5b041;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  h2 {
+    color: #a34226;
+    border-bottom: 3px solid #a34226;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  .rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f5b041;
+  }
+  .address, .hours, .contact, .cuisine, .reviews, .call-to-action {
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+  .photos {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photos img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+  }
+  .photos img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .menu-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+  }
+  .menu-list li {
+    margin: 8px 0;
+  }
+  footer {
+    background-color: #70371f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  .contact-links a {
+    color: #f5b041;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+  .call-to-action button {
+    background-color: #a34226;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  .call-to-action button:hover {
+    background-color: #70371f;
+  }
+  @media(max-width: 768px) {
+    .photos {
+      flex-direction: column;
+      align-items: center;
+    }
+    .photos img {
+      width: 90vw;
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+      font-size: 1.3rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Melting Moments Restaurant</h1>
+  <p class="rating">4.1 ★ (1.1K Reviews)</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#menu">Menu</a>
+  <a href="#photos">Photos</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>Melting Moments Restaurant</strong> – your ultimate destination for delicious fast food, Indian Thali, and a memorable dining experience. We offer all-you-can-eat specials, happy-hour food, and vegan options in a cozy ambiance with modern decor and colorful neon lighting.</p>
+    <p>Located at <strong>MDR18E, Police Line, Gonda, Uttar Pradesh 271001</strong>, we're open daily until 10:30 PM. Come join us and create your melting moments!</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <ul class="menu-list">
+      <li>Indian Thali – Traditional and authentic flavors</li>
+      <li>Fast Food – Burgers, fries, and more</li>
+      <li>Vegan Options – Flavorful plant-based meals</li>
+      <li>Happy Hour Specials – Great food at great prices</li>
+      <li>All You Can Eat – Enjoy unlimited servings</li>
+    </ul>
+  </section>
+
+  <section id="photos">
+    <h2>Photos</h2>
+    <div class="photos">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipOnH6kjQ514sdVZyTocPa2eej9SshZxlDVvHzun=s1600-w400" alt="Melting Moments restaurant signage"/>
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPA_e_7QMweBR9FqMeNoLJ_Zq9v5tEQdrjOwBUH=s1600-w400" alt="Neon lit cozy seating with colorful lights"/>
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPGyiAyA74r7PleWmjQpAMxDJ3u3xxDPiJlqEFQ=s1600-w400" alt="Warm elegant restaurant interior with tables and chairs"/>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <p>The restaurant holds an impressive <strong>4.1 rating from over 1,100 customers</strong> who appreciate the quality of food, wide variety, pleasant atmosphere, and attentive service. Perfect for family meals, quick bites, or hanging out with friends.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Location</h2>
+    <p class="address"><strong>Address:</strong> MDR18E, Police Line, Gonda, Uttar Pradesh 271001</p>
+    <p class="hours"><strong>Hours:</strong> Open now – Closes at 10:30 PM</p>
+    <p class="contact"><strong>Phone:</strong> <a href="tel:09198470683">091984 70683</a></p>
+    <div class="contact-links">
+      <a href="tel:09198470683" aria-label="Call Melting Moments Restaurant">Call</a> |
+      <a href="https://goo.gl/maps/your-map-link" target="_blank" aria-label="Get directions to Melting Moments Restaurant">Directions</a> |
+      <a href="https://wa.me/919198470683" target="_blank" aria-label="Chat with Melting Moments Restaurant on WhatsApp">WhatsApp</a> |
+      <a href="#" aria-label="Order Online from Melting Moments Restaurant">Order Online</a>
+    </div>
+  </section>
+
+  <section class="call-to-action">
+    <h2>Book Your Table or Order Online</h2>
+    <button onclick="alert('Thank you for your interest! Please call us or use the provided links to book your table or order online.')">Make a Reservation / Order Now</button>
+  </section>
+</div>
+
+<footer>
+  &copy; 2024 Melting Moments Restaurant | All Rights Reserved
+</footer>
+
+</body>
+</html>
